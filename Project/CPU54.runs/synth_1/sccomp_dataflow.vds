@@ -1,0 +1,511 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Thu Jul 08 20:45:02 2021
+# Process ID: 12008
+# Current directory: D:/Ray/Vivado/CPU54/CPU54.runs/synth_1
+# Command line: vivado.exe -log sccomp_dataflow.vds -mode batch -messageDb vivado.pb -notrace -source sccomp_dataflow.tcl
+# Log file: D:/Ray/Vivado/CPU54/CPU54.runs/synth_1/sccomp_dataflow.vds
+# Journal file: D:/Ray/Vivado/CPU54/CPU54.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source sccomp_dataflow.tcl -notrace
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-s7-25:part0:1.0 available at D:/Xilinx/Vivado/2016.2/data/boards/board_files/arty-s7-25/E.0/board.xml as part xc7s25csga324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-s7-50:part0:1.0 available at D:/Xilinx/Vivado/2016.2/data/boards/board_files/arty-s7-50/B.0/board.xml as part xc7s50csga324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:cmod-s7-25:part0:1.0 available at D:/Xilinx/Vivado/2016.2/data/boards/board_files/cmod-s7-25/B.0/board.xml as part xc7s25csga225-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:cora-z7-07s:part0:1.0 available at D:/Xilinx/Vivado/2016.2/data/boards/board_files/cora-z7-07s/B.0/board.xml as part xc7z007sclg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:gzu_3eg:part0:1.0 available at D:/Xilinx/Vivado/2016.2/data/boards/board_files/genesys-zu-3eg/B.0/board.xml as part xczu3eg-sfvc784-1-e specified in board_part file is either invalid or not available
+Command: synth_design -top sccomp_dataflow -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 15004 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 331.188 ; gain = 124.059
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'sccomp_dataflow' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/sccomp_dataflow.v:3]
+INFO: [Synth 8-638] synthesizing module 'imem' [D:/Ray/Vivado/CPU54/CPU54.runs/synth_1/.Xil/Vivado-12008-RayBeast/realtime/imem_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'imem' (1#1) [D:/Ray/Vivado/CPU54/CPU54.runs/synth_1/.Xil/Vivado-12008-RayBeast/realtime/imem_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'cpu' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/cpu.v:8]
+INFO: [Synth 8-638] synthesizing module 'CLZ' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/clz.v:3]
+INFO: [Synth 8-256] done synthesizing module 'CLZ' (2#1) [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/clz.v:3]
+INFO: [Synth 8-638] synthesizing module 'MULT' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/mult.v:3]
+INFO: [Synth 8-256] done synthesizing module 'MULT' (3#1) [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/mult.v:3]
+INFO: [Synth 8-638] synthesizing module 'MULTU' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/multu.v:3]
+INFO: [Synth 8-256] done synthesizing module 'MULTU' (4#1) [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/multu.v:3]
+INFO: [Synth 8-638] synthesizing module 'ALU' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/alu.v:3]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (5#1) [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/alu.v:3]
+INFO: [Synth 8-638] synthesizing module 'DIV' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/div.v:3]
+INFO: [Synth 8-256] done synthesizing module 'DIV' (6#1) [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/div.v:3]
+INFO: [Synth 8-638] synthesizing module 'DIVU' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/divu.v:3]
+INFO: [Synth 8-256] done synthesizing module 'DIVU' (7#1) [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/divu.v:3]
+INFO: [Synth 8-638] synthesizing module 'control' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/control.v:3]
+INFO: [Synth 8-256] done synthesizing module 'control' (8#1) [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/control.v:3]
+INFO: [Synth 8-638] synthesizing module 'regfile' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/regfile.v:3]
+INFO: [Synth 8-256] done synthesizing module 'regfile' (9#1) [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/regfile.v:3]
+INFO: [Synth 8-638] synthesizing module 'CP0' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/cp0.v:3]
+	Parameter istatus bound to: 5'b01100 
+	Parameter icause bound to: 5'b01101 
+	Parameter iepc bound to: 5'b01110 
+	Parameter SYSCALL bound to: 5'b01000 
+	Parameter BREAK bound to: 5'b01001 
+	Parameter TEQ bound to: 5'b01101 
+WARNING: [Synth 8-5788] Register cp0_reg_reg[31] in module CP0 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/cp0.v:22]
+WARNING: [Synth 8-5788] Register cp0_reg_reg[30] in module CP0 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/cp0.v:22]
+WARNING: [Synth 8-5788] Register cp0_reg_reg[29] in module CP0 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/cp0.v:22]
+WARNING: [Synth 8-5788] Register cp0_reg_reg[28] in module CP0 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/cp0.v:22]
+WARNING: [Synth 8-5788] Register cp0_reg_reg[27] in module CP0 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/cp0.v:22]
+WARNING: [Synth 8-5788] Register cp0_reg_reg[26] in module CP0 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/cp0.v:22]
+WARNING: [Synth 8-5788] Register cp0_reg_reg[25] in module CP0 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/cp0.v:22]
+WARNING: [Synth 8-5788] Register cp0_reg_reg[24] in module CP0 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/cp0.v:22]
+WARNING: [Synth 8-5788] Register cp0_reg_reg[23] in module CP0 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/cp0.v:22]
+WARNING: [Synth 8-5788] Register cp0_reg_reg[22] in module CP0 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/cp0.v:22]
+WARNING: [Synth 8-5788] Register cp0_reg_reg[21] in module CP0 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/cp0.v:22]
+WARNING: [Synth 8-5788] Register cp0_reg_reg[20] in module CP0 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/cp0.v:22]
+WARNING: [Synth 8-5788] Register cp0_reg_reg[19] in module CP0 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/cp0.v:22]
+WARNING: [Synth 8-5788] Register cp0_reg_reg[18] in module CP0 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/cp0.v:22]
+WARNING: [Synth 8-5788] Register cp0_reg_reg[17] in module CP0 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/cp0.v:22]
+WARNING: [Synth 8-5788] Register cp0_reg_reg[16] in module CP0 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/cp0.v:22]
+WARNING: [Synth 8-5788] Register cp0_reg_reg[15] in module CP0 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/cp0.v:22]
+WARNING: [Synth 8-5788] Register cp0_reg_reg[11] in module CP0 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/cp0.v:22]
+WARNING: [Synth 8-5788] Register cp0_reg_reg[10] in module CP0 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/cp0.v:22]
+WARNING: [Synth 8-5788] Register cp0_reg_reg[9] in module CP0 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/cp0.v:22]
+WARNING: [Synth 8-5788] Register cp0_reg_reg[8] in module CP0 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/cp0.v:22]
+WARNING: [Synth 8-5788] Register cp0_reg_reg[7] in module CP0 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/cp0.v:22]
+WARNING: [Synth 8-5788] Register cp0_reg_reg[6] in module CP0 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/cp0.v:22]
+WARNING: [Synth 8-5788] Register cp0_reg_reg[5] in module CP0 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/cp0.v:22]
+WARNING: [Synth 8-5788] Register cp0_reg_reg[4] in module CP0 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/cp0.v:22]
+WARNING: [Synth 8-5788] Register cp0_reg_reg[3] in module CP0 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/cp0.v:22]
+WARNING: [Synth 8-5788] Register cp0_reg_reg[2] in module CP0 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/cp0.v:22]
+WARNING: [Synth 8-5788] Register cp0_reg_reg[1] in module CP0 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/cp0.v:22]
+WARNING: [Synth 8-5788] Register cp0_reg_reg[0] in module CP0 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/cp0.v:22]
+INFO: [Synth 8-256] done synthesizing module 'CP0' (10#1) [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/cp0.v:3]
+INFO: [Synth 8-638] synthesizing module 'add' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/add.v:11]
+INFO: [Synth 8-256] done synthesizing module 'add' (11#1) [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/add.v:11]
+INFO: [Synth 8-638] synthesizing module 'NPC' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/add.v:3]
+INFO: [Synth 8-256] done synthesizing module 'NPC' (12#1) [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/add.v:3]
+INFO: [Synth 8-638] synthesizing module 'ext5' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/ext.v:3]
+INFO: [Synth 8-256] done synthesizing module 'ext5' (13#1) [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/ext.v:3]
+INFO: [Synth 8-638] synthesizing module 'ext16' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/ext.v:10]
+INFO: [Synth 8-256] done synthesizing module 'ext16' (14#1) [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/ext.v:10]
+INFO: [Synth 8-638] synthesizing module 'ext18' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/ext.v:18]
+INFO: [Synth 8-256] done synthesizing module 'ext18' (15#1) [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/ext.v:18]
+INFO: [Synth 8-638] synthesizing module 'HILO' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/hilo.v:3]
+INFO: [Synth 8-256] done synthesizing module 'HILO' (16#1) [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/hilo.v:3]
+INFO: [Synth 8-638] synthesizing module 'PC' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/pc.v:3]
+INFO: [Synth 8-256] done synthesizing module 'PC' (17#1) [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/pc.v:3]
+INFO: [Synth 8-638] synthesizing module 'CNW' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/cnw.v:3]
+INFO: [Synth 8-256] done synthesizing module 'CNW' (18#1) [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/cnw.v:3]
+INFO: [Synth 8-256] done synthesizing module 'cpu' (19#1) [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/cpu.v:8]
+INFO: [Synth 8-638] synthesizing module 'dmem' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/dmem.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/dmem.v:29]
+INFO: [Synth 8-256] done synthesizing module 'dmem' (20#1) [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/dmem.v:3]
+INFO: [Synth 8-256] done synthesizing module 'sccomp_dataflow' (21#1) [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/sccomp_dataflow.v:3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 648.363 ; gain = 441.234
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 648.363 ; gain = 441.234
+---------------------------------------------------------------------------------
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'imem' instantiated as 'imem_1' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/sccomp_dataflow.v:19]
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/Ray/Vivado/CPU54/CPU54.runs/synth_1/.Xil/Vivado-12008-RayBeast/dcp/imem_in_context.xdc] for cell 'imem_1'
+Finished Parsing XDC File [D:/Ray/Vivado/CPU54/CPU54.runs/synth_1/.Xil/Vivado-12008-RayBeast/dcp/imem_in_context.xdc] for cell 'imem_1'
+Parsing XDC File [D:/Ray/Vivado/CPU54/CPU54.srcs/constrs_1/new/cpu_onboard_xdc.xdc]
+WARNING: [Vivado 12-584] No ports matched 'o_seg[0]'. [D:/Ray/Vivado/CPU54/CPU54.srcs/constrs_1/new/cpu_onboard_xdc.xdc:4]
+WARNING: [Vivado 12-584] No ports matched 'o_seg[1]'. [D:/Ray/Vivado/CPU54/CPU54.srcs/constrs_1/new/cpu_onboard_xdc.xdc:5]
+WARNING: [Vivado 12-584] No ports matched 'o_seg[2]'. [D:/Ray/Vivado/CPU54/CPU54.srcs/constrs_1/new/cpu_onboard_xdc.xdc:6]
+WARNING: [Vivado 12-584] No ports matched 'o_seg[3]'. [D:/Ray/Vivado/CPU54/CPU54.srcs/constrs_1/new/cpu_onboard_xdc.xdc:7]
+WARNING: [Vivado 12-584] No ports matched 'o_seg[4]'. [D:/Ray/Vivado/CPU54/CPU54.srcs/constrs_1/new/cpu_onboard_xdc.xdc:8]
+WARNING: [Vivado 12-584] No ports matched 'o_seg[5]'. [D:/Ray/Vivado/CPU54/CPU54.srcs/constrs_1/new/cpu_onboard_xdc.xdc:9]
+WARNING: [Vivado 12-584] No ports matched 'o_seg[6]'. [D:/Ray/Vivado/CPU54/CPU54.srcs/constrs_1/new/cpu_onboard_xdc.xdc:10]
+WARNING: [Vivado 12-584] No ports matched 'o_seg[7]'. [D:/Ray/Vivado/CPU54/CPU54.srcs/constrs_1/new/cpu_onboard_xdc.xdc:11]
+WARNING: [Vivado 12-584] No ports matched 'o_sel[0]'. [D:/Ray/Vivado/CPU54/CPU54.srcs/constrs_1/new/cpu_onboard_xdc.xdc:13]
+WARNING: [Vivado 12-584] No ports matched 'o_sel[1]'. [D:/Ray/Vivado/CPU54/CPU54.srcs/constrs_1/new/cpu_onboard_xdc.xdc:14]
+WARNING: [Vivado 12-584] No ports matched 'o_sel[2]'. [D:/Ray/Vivado/CPU54/CPU54.srcs/constrs_1/new/cpu_onboard_xdc.xdc:15]
+WARNING: [Vivado 12-584] No ports matched 'o_sel[3]'. [D:/Ray/Vivado/CPU54/CPU54.srcs/constrs_1/new/cpu_onboard_xdc.xdc:16]
+WARNING: [Vivado 12-584] No ports matched 'o_sel[4]'. [D:/Ray/Vivado/CPU54/CPU54.srcs/constrs_1/new/cpu_onboard_xdc.xdc:17]
+WARNING: [Vivado 12-584] No ports matched 'o_sel[5]'. [D:/Ray/Vivado/CPU54/CPU54.srcs/constrs_1/new/cpu_onboard_xdc.xdc:18]
+WARNING: [Vivado 12-584] No ports matched 'o_sel[6]'. [D:/Ray/Vivado/CPU54/CPU54.srcs/constrs_1/new/cpu_onboard_xdc.xdc:19]
+WARNING: [Vivado 12-584] No ports matched 'o_sel[7]'. [D:/Ray/Vivado/CPU54/CPU54.srcs/constrs_1/new/cpu_onboard_xdc.xdc:20]
+WARNING: [Vivado 12-584] No ports matched 'sw[15]'. [D:/Ray/Vivado/CPU54/CPU54.srcs/constrs_1/new/cpu_onboard_xdc.xdc:39]
+WARNING: [Vivado 12-584] No ports matched 'sw[14]'. [D:/Ray/Vivado/CPU54/CPU54.srcs/constrs_1/new/cpu_onboard_xdc.xdc:40]
+WARNING: [Vivado 12-584] No ports matched 'sw[13]'. [D:/Ray/Vivado/CPU54/CPU54.srcs/constrs_1/new/cpu_onboard_xdc.xdc:41]
+WARNING: [Vivado 12-584] No ports matched 'sw[12]'. [D:/Ray/Vivado/CPU54/CPU54.srcs/constrs_1/new/cpu_onboard_xdc.xdc:42]
+WARNING: [Vivado 12-584] No ports matched 'sw[11]'. [D:/Ray/Vivado/CPU54/CPU54.srcs/constrs_1/new/cpu_onboard_xdc.xdc:43]
+WARNING: [Vivado 12-584] No ports matched 'sw[10]'. [D:/Ray/Vivado/CPU54/CPU54.srcs/constrs_1/new/cpu_onboard_xdc.xdc:44]
+WARNING: [Vivado 12-584] No ports matched 'sw[9]'. [D:/Ray/Vivado/CPU54/CPU54.srcs/constrs_1/new/cpu_onboard_xdc.xdc:45]
+WARNING: [Vivado 12-584] No ports matched 'sw[8]'. [D:/Ray/Vivado/CPU54/CPU54.srcs/constrs_1/new/cpu_onboard_xdc.xdc:46]
+WARNING: [Vivado 12-584] No ports matched 'sw[7]'. [D:/Ray/Vivado/CPU54/CPU54.srcs/constrs_1/new/cpu_onboard_xdc.xdc:47]
+WARNING: [Vivado 12-584] No ports matched 'sw[6]'. [D:/Ray/Vivado/CPU54/CPU54.srcs/constrs_1/new/cpu_onboard_xdc.xdc:48]
+WARNING: [Vivado 12-584] No ports matched 'sw[5]'. [D:/Ray/Vivado/CPU54/CPU54.srcs/constrs_1/new/cpu_onboard_xdc.xdc:49]
+WARNING: [Vivado 12-584] No ports matched 'sw[4]'. [D:/Ray/Vivado/CPU54/CPU54.srcs/constrs_1/new/cpu_onboard_xdc.xdc:50]
+WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [D:/Ray/Vivado/CPU54/CPU54.srcs/constrs_1/new/cpu_onboard_xdc.xdc:51]
+WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [D:/Ray/Vivado/CPU54/CPU54.srcs/constrs_1/new/cpu_onboard_xdc.xdc:52]
+WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [D:/Ray/Vivado/CPU54/CPU54.srcs/constrs_1/new/cpu_onboard_xdc.xdc:53]
+WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [D:/Ray/Vivado/CPU54/CPU54.srcs/constrs_1/new/cpu_onboard_xdc.xdc:54]
+WARNING: [Vivado 12-584] No ports matched 'o_sel[7]'. [D:/Ray/Vivado/CPU54/CPU54.srcs/constrs_1/new/cpu_onboard_xdc.xdc:56]
+WARNING: [Vivado 12-584] No ports matched 'o_sel[6]'. [D:/Ray/Vivado/CPU54/CPU54.srcs/constrs_1/new/cpu_onboard_xdc.xdc:57]
+WARNING: [Vivado 12-584] No ports matched 'o_sel[5]'. [D:/Ray/Vivado/CPU54/CPU54.srcs/constrs_1/new/cpu_onboard_xdc.xdc:58]
+WARNING: [Vivado 12-584] No ports matched 'o_sel[4]'. [D:/Ray/Vivado/CPU54/CPU54.srcs/constrs_1/new/cpu_onboard_xdc.xdc:59]
+WARNING: [Vivado 12-584] No ports matched 'o_sel[3]'. [D:/Ray/Vivado/CPU54/CPU54.srcs/constrs_1/new/cpu_onboard_xdc.xdc:60]
+WARNING: [Vivado 12-584] No ports matched 'o_sel[2]'. [D:/Ray/Vivado/CPU54/CPU54.srcs/constrs_1/new/cpu_onboard_xdc.xdc:61]
+WARNING: [Vivado 12-584] No ports matched 'o_sel[1]'. [D:/Ray/Vivado/CPU54/CPU54.srcs/constrs_1/new/cpu_onboard_xdc.xdc:62]
+WARNING: [Vivado 12-584] No ports matched 'o_sel[0]'. [D:/Ray/Vivado/CPU54/CPU54.srcs/constrs_1/new/cpu_onboard_xdc.xdc:63]
+WARNING: [Vivado 12-584] No ports matched 'o_seg[7]'. [D:/Ray/Vivado/CPU54/CPU54.srcs/constrs_1/new/cpu_onboard_xdc.xdc:65]
+WARNING: [Vivado 12-584] No ports matched 'o_seg[6]'. [D:/Ray/Vivado/CPU54/CPU54.srcs/constrs_1/new/cpu_onboard_xdc.xdc:66]
+WARNING: [Vivado 12-584] No ports matched 'o_seg[5]'. [D:/Ray/Vivado/CPU54/CPU54.srcs/constrs_1/new/cpu_onboard_xdc.xdc:67]
+WARNING: [Vivado 12-584] No ports matched 'o_seg[4]'. [D:/Ray/Vivado/CPU54/CPU54.srcs/constrs_1/new/cpu_onboard_xdc.xdc:68]
+WARNING: [Vivado 12-584] No ports matched 'o_seg[3]'. [D:/Ray/Vivado/CPU54/CPU54.srcs/constrs_1/new/cpu_onboard_xdc.xdc:69]
+WARNING: [Vivado 12-584] No ports matched 'o_seg[2]'. [D:/Ray/Vivado/CPU54/CPU54.srcs/constrs_1/new/cpu_onboard_xdc.xdc:70]
+WARNING: [Vivado 12-584] No ports matched 'o_seg[1]'. [D:/Ray/Vivado/CPU54/CPU54.srcs/constrs_1/new/cpu_onboard_xdc.xdc:71]
+WARNING: [Vivado 12-584] No ports matched 'o_seg[0]'. [D:/Ray/Vivado/CPU54/CPU54.srcs/constrs_1/new/cpu_onboard_xdc.xdc:72]
+Finished Parsing XDC File [D:/Ray/Vivado/CPU54/CPU54.srcs/constrs_1/new/cpu_onboard_xdc.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [D:/Ray/Vivado/CPU54/CPU54.srcs/constrs_1/new/cpu_onboard_xdc.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/sccomp_dataflow_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Ray/Vivado/CPU54/CPU54.srcs/constrs_1/new/cpu_onboard_xdc.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/sccomp_dataflow_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/sccomp_dataflow_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [D:/Ray/Vivado/CPU54/CPU54.srcs/constrs_1/new/cpu_onboard_test_xdc.xdc]
+WARNING: [Vivado 12-584] No ports matched 'o_seg[0]'. [D:/Ray/Vivado/CPU54/CPU54.srcs/constrs_1/new/cpu_onboard_test_xdc.xdc:4]
+WARNING: [Vivado 12-584] No ports matched 'o_seg[1]'. [D:/Ray/Vivado/CPU54/CPU54.srcs/constrs_1/new/cpu_onboard_test_xdc.xdc:5]
+WARNING: [Vivado 12-584] No ports matched 'o_seg[2]'. [D:/Ray/Vivado/CPU54/CPU54.srcs/constrs_1/new/cpu_onboard_test_xdc.xdc:6]
+WARNING: [Vivado 12-584] No ports matched 'o_seg[3]'. [D:/Ray/Vivado/CPU54/CPU54.srcs/constrs_1/new/cpu_onboard_test_xdc.xdc:7]
+WARNING: [Vivado 12-584] No ports matched 'o_seg[4]'. [D:/Ray/Vivado/CPU54/CPU54.srcs/constrs_1/new/cpu_onboard_test_xdc.xdc:8]
+WARNING: [Vivado 12-584] No ports matched 'o_seg[5]'. [D:/Ray/Vivado/CPU54/CPU54.srcs/constrs_1/new/cpu_onboard_test_xdc.xdc:9]
+WARNING: [Vivado 12-584] No ports matched 'o_seg[6]'. [D:/Ray/Vivado/CPU54/CPU54.srcs/constrs_1/new/cpu_onboard_test_xdc.xdc:10]
+WARNING: [Vivado 12-584] No ports matched 'o_seg[7]'. [D:/Ray/Vivado/CPU54/CPU54.srcs/constrs_1/new/cpu_onboard_test_xdc.xdc:11]
+WARNING: [Vivado 12-584] No ports matched 'o_sel[0]'. [D:/Ray/Vivado/CPU54/CPU54.srcs/constrs_1/new/cpu_onboard_test_xdc.xdc:13]
+WARNING: [Vivado 12-584] No ports matched 'o_sel[1]'. [D:/Ray/Vivado/CPU54/CPU54.srcs/constrs_1/new/cpu_onboard_test_xdc.xdc:14]
+WARNING: [Vivado 12-584] No ports matched 'o_sel[2]'. [D:/Ray/Vivado/CPU54/CPU54.srcs/constrs_1/new/cpu_onboard_test_xdc.xdc:15]
+WARNING: [Vivado 12-584] No ports matched 'o_sel[3]'. [D:/Ray/Vivado/CPU54/CPU54.srcs/constrs_1/new/cpu_onboard_test_xdc.xdc:16]
+WARNING: [Vivado 12-584] No ports matched 'o_sel[4]'. [D:/Ray/Vivado/CPU54/CPU54.srcs/constrs_1/new/cpu_onboard_test_xdc.xdc:17]
+WARNING: [Vivado 12-584] No ports matched 'o_sel[5]'. [D:/Ray/Vivado/CPU54/CPU54.srcs/constrs_1/new/cpu_onboard_test_xdc.xdc:18]
+WARNING: [Vivado 12-584] No ports matched 'o_sel[6]'. [D:/Ray/Vivado/CPU54/CPU54.srcs/constrs_1/new/cpu_onboard_test_xdc.xdc:19]
+WARNING: [Vivado 12-584] No ports matched 'o_sel[7]'. [D:/Ray/Vivado/CPU54/CPU54.srcs/constrs_1/new/cpu_onboard_test_xdc.xdc:20]
+WARNING: [Vivado 12-584] No ports matched 'choose'. [D:/Ray/Vivado/CPU54/CPU54.srcs/constrs_1/new/cpu_onboard_test_xdc.xdc:22]
+WARNING: [Vivado 12-584] No ports matched 'choose'. [D:/Ray/Vivado/CPU54/CPU54.srcs/constrs_1/new/cpu_onboard_test_xdc.xdc:24]
+WARNING: [Vivado 12-584] No ports matched 'o_sel[7]'. [D:/Ray/Vivado/CPU54/CPU54.srcs/constrs_1/new/cpu_onboard_test_xdc.xdc:26]
+WARNING: [Vivado 12-584] No ports matched 'o_sel[6]'. [D:/Ray/Vivado/CPU54/CPU54.srcs/constrs_1/new/cpu_onboard_test_xdc.xdc:27]
+WARNING: [Vivado 12-584] No ports matched 'o_sel[5]'. [D:/Ray/Vivado/CPU54/CPU54.srcs/constrs_1/new/cpu_onboard_test_xdc.xdc:28]
+WARNING: [Vivado 12-584] No ports matched 'o_sel[4]'. [D:/Ray/Vivado/CPU54/CPU54.srcs/constrs_1/new/cpu_onboard_test_xdc.xdc:29]
+WARNING: [Vivado 12-584] No ports matched 'o_sel[3]'. [D:/Ray/Vivado/CPU54/CPU54.srcs/constrs_1/new/cpu_onboard_test_xdc.xdc:30]
+WARNING: [Vivado 12-584] No ports matched 'o_sel[2]'. [D:/Ray/Vivado/CPU54/CPU54.srcs/constrs_1/new/cpu_onboard_test_xdc.xdc:31]
+WARNING: [Vivado 12-584] No ports matched 'o_sel[1]'. [D:/Ray/Vivado/CPU54/CPU54.srcs/constrs_1/new/cpu_onboard_test_xdc.xdc:32]
+WARNING: [Vivado 12-584] No ports matched 'o_sel[0]'. [D:/Ray/Vivado/CPU54/CPU54.srcs/constrs_1/new/cpu_onboard_test_xdc.xdc:33]
+WARNING: [Vivado 12-584] No ports matched 'o_seg[7]'. [D:/Ray/Vivado/CPU54/CPU54.srcs/constrs_1/new/cpu_onboard_test_xdc.xdc:35]
+WARNING: [Vivado 12-584] No ports matched 'o_seg[6]'. [D:/Ray/Vivado/CPU54/CPU54.srcs/constrs_1/new/cpu_onboard_test_xdc.xdc:36]
+WARNING: [Vivado 12-584] No ports matched 'o_seg[5]'. [D:/Ray/Vivado/CPU54/CPU54.srcs/constrs_1/new/cpu_onboard_test_xdc.xdc:37]
+WARNING: [Vivado 12-584] No ports matched 'o_seg[4]'. [D:/Ray/Vivado/CPU54/CPU54.srcs/constrs_1/new/cpu_onboard_test_xdc.xdc:38]
+WARNING: [Vivado 12-584] No ports matched 'o_seg[3]'. [D:/Ray/Vivado/CPU54/CPU54.srcs/constrs_1/new/cpu_onboard_test_xdc.xdc:39]
+WARNING: [Vivado 12-584] No ports matched 'o_seg[2]'. [D:/Ray/Vivado/CPU54/CPU54.srcs/constrs_1/new/cpu_onboard_test_xdc.xdc:40]
+WARNING: [Vivado 12-584] No ports matched 'o_seg[1]'. [D:/Ray/Vivado/CPU54/CPU54.srcs/constrs_1/new/cpu_onboard_test_xdc.xdc:41]
+WARNING: [Vivado 12-584] No ports matched 'o_seg[0]'. [D:/Ray/Vivado/CPU54/CPU54.srcs/constrs_1/new/cpu_onboard_test_xdc.xdc:42]
+WARNING: [Constraints 18-619] A clock with name 'clk_pin' already exists, overwriting the previous clock with the same name. [D:/Ray/Vivado/CPU54/CPU54.srcs/constrs_1/new/cpu_onboard_test_xdc.xdc:47]
+Finished Parsing XDC File [D:/Ray/Vivado/CPU54/CPU54.srcs/constrs_1/new/cpu_onboard_test_xdc.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [D:/Ray/Vivado/CPU54/CPU54.srcs/constrs_1/new/cpu_onboard_test_xdc.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/sccomp_dataflow_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Ray/Vivado/CPU54/CPU54.srcs/constrs_1/new/cpu_onboard_test_xdc.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/sccomp_dataflow_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/sccomp_dataflow_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.062 . Memory (MB): peak = 1031.406 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:48 ; elapsed = 00:00:51 . Memory (MB): peak = 1031.406 ; gain = 824.277
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 2 processes.
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:48 ; elapsed = 00:00:51 . Memory (MB): peak = 1031.406 ; gain = 824.277
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:48 ; elapsed = 00:00:51 . Memory (MB): peak = 1031.406 ; gain = 824.277
+---------------------------------------------------------------------------------
+INFO: Vivado Synthesis caught shared memory exception '系统找不到指定的文件。'. Continuing without using shared memory (or continuing without helper parallel flow)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/alu.v:14]
+INFO: [Synth 8-5545] ROM "zero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "srt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "busy" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "srt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "srt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cp0_reg_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cp0_reg_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cp0_reg_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cp0_reg_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cp0_reg_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cp0_reg_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cp0_reg_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cp0_reg_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cp0_reg_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cp0_reg_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cp0_reg_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cp0_reg_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cp0_reg_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cp0_reg_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cp0_reg_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cp0_reg_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cp0_reg_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cp0_reg_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cp0_reg_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cp0_reg_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cp0_reg_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cp0_reg_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cp0_reg_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cp0_reg_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cp0_reg_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cp0_reg_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cp0_reg_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cp0_reg_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cp0_reg_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cp0_reg_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cp0_reg_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cp0_reg_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "memory_reg[551]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[551]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[551]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[550]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[550]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[550]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[549]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[549]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[549]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[548]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[548]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[548]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[547]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[547]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[547]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[546]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[546]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[546]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[545]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[545]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[545]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[544]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[544]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[544]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[543]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[543]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[543]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[542]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[542]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[542]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[541]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[541]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[541]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[540]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[540]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[540]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[539]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[539]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[539]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[538]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[538]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[538]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[537]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[537]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[537]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[536]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[536]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[536]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[535]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[535]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[535]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[534]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[534]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[534]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[533]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[533]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[533]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[532]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[532]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[532]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[531]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[531]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[531]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[530]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[530]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[530]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[529]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[529]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[529]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[528]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[528]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[528]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[527]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[527]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[527]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[526]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[526]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[526]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[525]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[525]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[525]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[524]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[524]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[524]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[523]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[523]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[523]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[522]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[522]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[522]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[521]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[521]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[521]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[520]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[520]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Common 17-14] Message 'Synth 8-5545' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-327] inferring latch for variable 'z_sign_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/mult.v:44]
+WARNING: [Synth 8-327] inferring latch for variable 'temp_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/mult.v:44]
+WARNING: [Synth 8-327] inferring latch for variable 'flag5_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/mult.v:49]
+WARNING: [Synth 8-327] inferring latch for variable 'add16_31_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/mult.v:66]
+WARNING: [Synth 8-327] inferring latch for variable 'add00_15_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/mult.v:66]
+WARNING: [Synth 8-327] inferring latch for variable 'flag4_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/mult.v:49]
+WARNING: [Synth 8-327] inferring latch for variable 'add24_31_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/mult.v:65]
+WARNING: [Synth 8-327] inferring latch for variable 'add16_23_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/mult.v:65]
+WARNING: [Synth 8-327] inferring latch for variable 'add08_15_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/mult.v:65]
+WARNING: [Synth 8-327] inferring latch for variable 'add00_07_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/mult.v:65]
+WARNING: [Synth 8-327] inferring latch for variable 'flag3_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/mult.v:49]
+WARNING: [Synth 8-327] inferring latch for variable 'add28_31_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/mult.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'add24_27_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/mult.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'add20_23_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/mult.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'add16_19_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/mult.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'add12_15_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/mult.v:63]
+WARNING: [Synth 8-327] inferring latch for variable 'add08_11_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/mult.v:63]
+WARNING: [Synth 8-327] inferring latch for variable 'add04_07_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/mult.v:63]
+WARNING: [Synth 8-327] inferring latch for variable 'add00_03_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/mult.v:63]
+WARNING: [Synth 8-327] inferring latch for variable 'flag2_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/mult.v:49]
+WARNING: [Synth 8-327] inferring latch for variable 'add30_31_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/mult.v:62]
+WARNING: [Synth 8-327] inferring latch for variable 'add28_29_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/mult.v:62]
+WARNING: [Synth 8-327] inferring latch for variable 'add26_27_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/mult.v:62]
+WARNING: [Synth 8-327] inferring latch for variable 'add24_25_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/mult.v:62]
+WARNING: [Synth 8-327] inferring latch for variable 'add22_23_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/mult.v:61]
+WARNING: [Synth 8-327] inferring latch for variable 'add20_21_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/mult.v:61]
+WARNING: [Synth 8-327] inferring latch for variable 'add18_19_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/mult.v:61]
+WARNING: [Synth 8-327] inferring latch for variable 'add16_17_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/mult.v:61]
+WARNING: [Synth 8-327] inferring latch for variable 'add14_15_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/mult.v:60]
+WARNING: [Synth 8-327] inferring latch for variable 'add12_13_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/mult.v:60]
+WARNING: [Synth 8-327] inferring latch for variable 'add10_11_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/mult.v:60]
+WARNING: [Synth 8-327] inferring latch for variable 'add08_09_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/mult.v:60]
+WARNING: [Synth 8-327] inferring latch for variable 'add06_07_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/mult.v:59]
+WARNING: [Synth 8-327] inferring latch for variable 'add04_05_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/mult.v:59]
+WARNING: [Synth 8-327] inferring latch for variable 'add02_03_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/mult.v:59]
+WARNING: [Synth 8-327] inferring latch for variable 'add00_01_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/mult.v:59]
+WARNING: [Synth 8-327] inferring latch for variable 'flag1_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/mult.v:49]
+WARNING: [Synth 8-327] inferring latch for variable 'stored31_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/mult.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'stored30_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/mult.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'stored29_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/mult.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'stored28_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/mult.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'stored27_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/mult.v:56]
+WARNING: [Synth 8-327] inferring latch for variable 'stored26_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/mult.v:56]
+WARNING: [Synth 8-327] inferring latch for variable 'stored25_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/mult.v:56]
+WARNING: [Synth 8-327] inferring latch for variable 'stored24_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/mult.v:56]
+WARNING: [Synth 8-327] inferring latch for variable 'stored23_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/mult.v:55]
+WARNING: [Synth 8-327] inferring latch for variable 'stored22_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/mult.v:55]
+WARNING: [Synth 8-327] inferring latch for variable 'stored21_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/mult.v:55]
+WARNING: [Synth 8-327] inferring latch for variable 'stored20_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/mult.v:55]
+WARNING: [Synth 8-327] inferring latch for variable 'stored19_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/mult.v:54]
+WARNING: [Synth 8-327] inferring latch for variable 'stored18_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/mult.v:54]
+WARNING: [Synth 8-327] inferring latch for variable 'stored17_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/mult.v:54]
+WARNING: [Synth 8-327] inferring latch for variable 'stored16_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/mult.v:54]
+WARNING: [Synth 8-327] inferring latch for variable 'stored15_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/mult.v:53]
+WARNING: [Synth 8-327] inferring latch for variable 'stored14_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/mult.v:53]
+WARNING: [Synth 8-327] inferring latch for variable 'stored13_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/mult.v:53]
+WARNING: [Synth 8-327] inferring latch for variable 'stored12_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/mult.v:53]
+WARNING: [Synth 8-327] inferring latch for variable 'stored11_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/mult.v:52]
+WARNING: [Synth 8-327] inferring latch for variable 'stored10_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/mult.v:52]
+WARNING: [Synth 8-327] inferring latch for variable 'stored09_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/mult.v:52]
+WARNING: [Synth 8-327] inferring latch for variable 'stored08_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/mult.v:52]
+WARNING: [Synth 8-327] inferring latch for variable 'stored07_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/mult.v:51]
+WARNING: [Synth 8-327] inferring latch for variable 'stored06_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/mult.v:51]
+WARNING: [Synth 8-327] inferring latch for variable 'stored05_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/mult.v:51]
+WARNING: [Synth 8-327] inferring latch for variable 'stored04_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/mult.v:51]
+WARNING: [Synth 8-327] inferring latch for variable 'stored03_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/mult.v:50]
+WARNING: [Synth 8-327] inferring latch for variable 'stored02_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/mult.v:50]
+WARNING: [Synth 8-327] inferring latch for variable 'stored01_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/mult.v:50]
+WARNING: [Synth 8-327] inferring latch for variable 'stored00_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/mult.v:50]
+WARNING: [Synth 8-327] inferring latch for variable 'flag_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/mult.v:71]
+WARNING: [Synth 8-327] inferring latch for variable 'temp_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/multu.v:33]
+WARNING: [Synth 8-327] inferring latch for variable 'add16_31_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/multu.v:53]
+WARNING: [Synth 8-327] inferring latch for variable 'add00_15_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/multu.v:53]
+WARNING: [Synth 8-327] inferring latch for variable 'flag5_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/multu.v:36]
+WARNING: [Synth 8-327] inferring latch for variable 'add24_31_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/multu.v:52]
+WARNING: [Synth 8-327] inferring latch for variable 'add16_23_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/multu.v:52]
+WARNING: [Synth 8-327] inferring latch for variable 'flag4_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/multu.v:36]
+WARNING: [Synth 8-327] inferring latch for variable 'add08_15_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/multu.v:52]
+WARNING: [Synth 8-327] inferring latch for variable 'add00_07_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/multu.v:52]
+WARNING: [Synth 8-327] inferring latch for variable 'add28_31_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/multu.v:51]
+WARNING: [Synth 8-327] inferring latch for variable 'add24_27_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/multu.v:51]
+WARNING: [Synth 8-327] inferring latch for variable 'flag3_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/multu.v:36]
+WARNING: [Synth 8-327] inferring latch for variable 'add20_23_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/multu.v:51]
+WARNING: [Synth 8-327] inferring latch for variable 'add16_19_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/multu.v:51]
+WARNING: [Synth 8-327] inferring latch for variable 'add12_15_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/multu.v:50]
+WARNING: [Synth 8-327] inferring latch for variable 'add08_11_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/multu.v:50]
+WARNING: [Synth 8-327] inferring latch for variable 'add04_07_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/multu.v:50]
+WARNING: [Synth 8-327] inferring latch for variable 'add00_03_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/multu.v:50]
+WARNING: [Synth 8-327] inferring latch for variable 'add30_31_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/multu.v:49]
+WARNING: [Synth 8-327] inferring latch for variable 'add28_29_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/multu.v:49]
+WARNING: [Synth 8-327] inferring latch for variable 'flag2_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/multu.v:36]
+WARNING: [Synth 8-327] inferring latch for variable 'add26_27_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/multu.v:49]
+WARNING: [Synth 8-327] inferring latch for variable 'add24_25_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/multu.v:49]
+WARNING: [Synth 8-327] inferring latch for variable 'add22_23_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/multu.v:48]
+WARNING: [Synth 8-327] inferring latch for variable 'add20_21_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/multu.v:48]
+WARNING: [Synth 8-327] inferring latch for variable 'add18_19_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/multu.v:48]
+WARNING: [Synth 8-327] inferring latch for variable 'add16_17_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/multu.v:48]
+WARNING: [Synth 8-327] inferring latch for variable 'add14_15_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/multu.v:47]
+WARNING: [Synth 8-327] inferring latch for variable 'add12_13_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/multu.v:47]
+WARNING: [Synth 8-327] inferring latch for variable 'add10_11_reg' [D:/Ray/Vivado/CPU54/CPU54.srcs/sources_1/new/multu.v:47]
+INFO: [Common 17-14] Message 'Synth 8-327' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
